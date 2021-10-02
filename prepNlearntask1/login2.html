@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../img/idi circle-LOGO.png">
+    <title>log in</title>
+    <link rel="stylesheet" href="p1sign_up.css">
+    <script src="sign.js">
+    </script>
+</head>
+
+<body onresize="location.reload()">
+    <div id="buller" onclick="menuBr(0)"></div>
+    <nav>
+
+
+        <div class="menu" id="s2">
+            <ul>
+                <li id="menubar" onclick="menuBr(0)" style="padding-left:5px ;">X
+
+
+                </li>
+                <li>
+                    <a href="home/index.php">home</a>
+                </li>
+
+                <li>
+                    <a href="newuser2.php">sign up as coaching</a>
+                </li>
+                <li  >
+                    <a href="newuser.php">sign up as student</a>
+                </li>
+
+
+            </ul>
+        </div>
+        <div class="navbar">
+
+            <button id="s1" onclick="menuBr(1)">
+                <span id="s11" class="icon-bar"></span>
+                <span id="s12" class="icon-bar"></span>
+                <span id="s13" class="icon-bar"></span>
+            </button>
+        </div>
+
+        <div class="login">
+           
+            <a class="active" href="login.html">LOG-IN</a>
+        </div>
+
+
+    </nav>
+    <main>
+        <div class="wrappeer">
+            <div class="box">
+                <h1 class="header">log in as coaching</h1>
+ <a style="color: green;" href="https://prepnlearn.com">continue  as guest</a>
+                <div>
+                    <form action="/projectidl/login/loginphp/login.php" autocomplete="off" method="POST" formenctype>
+
+                        <div class="field input_box">
+                            <label>Email Id or user id<span style="color: rgb(138, 0, 0);">*</span> </label>
+                            <input type="text" name="id" placeholder="ak@gmail.com" autocomplete="" required>
+                        </div>
+                        <div class="field input_box">
+                            <label>password<span style="color: rgb(138, 0, 0);">*</span> </label>
+                            <input type="password" name="password" id="password" required>
+                        </div>
+                        <input type="checkbox" id="cheakbox1" onclick="showpassword('password')"><label>show password</label>
+
+                        <div><button id="submit" style="min-width: 260px;">log -in</button>
+                        </div>
+                    </form>
+                    <div class="link">
+                        <div>
+                            <a href="login.html">
+                                <b>login as student</b></a>
+                        </div>
+                    </div>
+                    <div class="link">yet not signed up?
+                      <div> <a href="newuser.php">sign-up as student</a></div>
+                        <div> <a href="newuser2.php">sign-up as coaching</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+
+</html>
